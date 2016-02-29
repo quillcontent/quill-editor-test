@@ -4,9 +4,10 @@
   "description": "",
   "main": "./lib/QuillEditor.js",
   "scripts": {
-    "start": "killall python && npm run webpack & npm run serve",
+    "start": "npm run webpack & npm run serve",
     "serve": "python -m SimpleHTTPServer",
-    "webpack": "./node_modules/.bin/webpack -w --config webpack.config.js"
+    "webpack": "./node_modules/.bin/webpack -w --config webpack.config.js",
+    "postinstall": "./node_modules/.bin/webpack --config webpack.config.js"
   },
   "engine": "node >= 0.4.1",
   "author": "Jack Callister",
