@@ -8,6 +8,7 @@
     "serve": "python -m SimpleHTTPServer",
     "webpack": "./node_modules/.bin/webpack -w --config webpack.config.js"
   },
+  "engine": "node >= 0.4.1",
   "author": "Jack Callister",
   "license": "ISC",
   "dependencies": {
